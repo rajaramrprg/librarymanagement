@@ -1,0 +1,8 @@
+ERRORDOCUMENT 404 /pagenotfound.php
+Options -Indexes
+RewriteEngine on
+
+RewriteRule "TOLOGIN"            "login.php" [PT]
+RewriteRule "LOGOUT"            "login.php" [PT]
+RewriteRule "HOME"            "index.php" [PT]
+RewriteRule "SessionExpired"            "session_expiry.php" [PT]
