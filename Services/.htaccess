@@ -1,0 +1,43 @@
+RewriteEngine on
+
+RewriteRule ^HOME home.php
+
+
+
+
+
+RewriteRule ^GetBooklistforAdmin/$  RestController.php?view=GetBooklistforAdmin [nc,qsa]
+RewriteRule ^getbooklistforStock/$  RestController.php?view=getbooklistforStock [nc,qsa]
+RewriteRule ^updateBookStock/([^?.]*)/([^?.]*)/$ RestController.php?view=updateBookStock&id=$1&qty=$2 [nc,qsa]
+RewriteRule ^addnewbooksAdmin/$  RestController.php?view=addnewbooksAdmin [nc,qsa]
+RewriteRule ^getbookdetailsByid/([^?.]*)/$ RestController.php?view=getbookdetailsByid&id=$1 [nc,qsa]
+RewriteRule ^getallbookswithoutSubcription/$  RestController.php?view=getallbookswithoutSubcription [nc,qsa]
+RewriteRule ^getallbookswithSubcription/$  RestController.php?view=getallbookswithSubcription [nc,qsa]
+RewriteRule ^addbooktosubscription/([^?.]*)/([^?.]*)/$ RestController.php?view=addbooktosubscription&id=$1&wfrom=$2 [nc,qsa]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
